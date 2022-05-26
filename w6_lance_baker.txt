@@ -1,0 +1,114 @@
+select * from friends_lb0608
+
+create table 
+friends_lb0608
+(firstname varchar(15),
+ lastname varchar(20),
+ age number(2),
+ city varchar(20),
+ state varchar(20));
+
+insert into friends_lb0608
+  (firstname, lastname, age, city, state)
+  values ('Ryan', 'Morrison', 29, 'GrandJunction', 'Colorado');
+
+insert into friends_lb0608
+  (firstname, lastname, age, city, state)
+  values ('Sasha', 'Baker', 32, 'GrandJunction', 'Colorado');
+
+insert into friends_lb0608
+  (firstname, lastname, age, city, state)
+  values ('Jen', 'Morrison', 26, 'GrandJunction', 'Colorado');
+
+insert into friends_lb0608
+  (firstname, lastname, age, city, state)
+  values ('Dylan', 'Blount', 31, 'GrandJunction', 'Colorado');
+
+insert into friends_lb0608
+  (firstname, lastname, age, city, state)
+  values ('Kevin', 'Waters', 31, 'Osan', 'Korea');
+
+insert into friends_lb0608
+  (firstname, lastname, age, city, state)
+  values ('Dan', 'Murphy', 39, 'Osan', 'Korea');
+
+insert into friends_lb0608
+  (firstname, lastname, age, city, state)
+  values ('Mike', 'Moggy', 24, 'Detroit', 'Michigan');
+
+insert into friends_lb0608
+  (firstname, lastname, age, city, state)
+  values ('Pete', 'Patty', 19, 'Denver', 'Colorado');
+
+insert into friends_lb0608
+  (firstname, lastname, age, city, state)
+  values ('Julia', 'Vineyard', 19, 'LosAngeles', 'California');
+
+insert into friends_lb0608
+  (firstname, lastname, age, city, state)
+  values ('Dale', 'Mallard', 59, 'LasVegas', 'Nevada');
+
+update friends_lb0608
+  set age = age+1
+  where firstname='Ryan' and lastname='Morrison';
+
+update friends_lb0608
+set lastname='Wazowski' 
+where firstname='Mike' and lastname='Moggy';
+
+update friends_lb0608
+  set age = age+1
+  where firstname='Sasha';
+
+update friends_lb0608
+  set age = age+1
+  where firstname='Sasha';
+
+update friends_lb0608
+  set firstname=’Daniel’
+  where lastname=’Murphy’;
+
+update friends_lb0608
+  set firstname=’Dina’
+  where city=’Detroit’;
+
+update friends_lb0608
+  Set city=’Grand Junction’
+  Where city=’GrandJunction’;
+
+update friends_lb0608
+  Set state=’PYEONGTAEK’
+  Where city=’Osan’;
+  
+update friends_lb0608
+  set age = age-5
+  where firstname='Mike';
+
+update friends_lb0608  
+  set title = 'first name'
+  where title = 'firstname';
+  
+
+  
+select * from friends_lb0608 where name LIKE ‘Jen’;
+
+select * from friends_lb0608 order by age, age asc;
+
+sselect * from friends_lb0608 order by age, age desc;
+
+SELECT COUNT age
+FROM friends_lb0608
+WHERE age>30;
+
+SELECT COUNT age
+FROM friends_lb0608;
+
+delete from friends_lb0608
+  where lastname = 'Moggy';
+  
+delete from friends_lb0608
+  where first name = 'Pete';
+
+delete from friends_lb0608
+
+(delete it all at the end. This is just a comment)

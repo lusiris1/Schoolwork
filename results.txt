@@ -1,0 +1,5 @@
+Microsoft (R) Windows Script Host Version 5.812
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+The total =10
+The avg =3.33333333333333
